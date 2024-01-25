@@ -13,3 +13,9 @@ model Yarns {
   address String @db.VarChar(50)
   date    String @db.VarChar(50)
 }
+
+model Colors {
+  id   Int    @id @default(autoincrement())
+  name String @db.VarChar(50)
+  date String @db.VarChar(50)
+}

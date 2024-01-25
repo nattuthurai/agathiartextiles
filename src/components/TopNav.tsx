@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const TopNav = () => {
   const [isMenuHidden1, setIsMenuHidden1] = useState(true);
@@ -38,7 +39,7 @@ const TopNav = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 shadow-md">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <img
             src="https://www.codewithfaraz.com/InstaPic.png"
             className="h-8 mr-3"
@@ -47,7 +48,7 @@ const TopNav = () => {
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Agathiar Textiles
           </span>
-        </a>
+        </Link>
         <button
           id="navbar-toggle"
           type="button"
@@ -80,29 +81,35 @@ const TopNav = () => {
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a
+              {/* <a
                 href="/transaction"
                 className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
                 aria-current="page"
+              > </a>*/}
+
+              <Link
+                href="/transaction"
+                aria-current="page"
+                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
               >
                 Transaction
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/voucher"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Voucher
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/users"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 View customer
-              </a>
+              </Link>
             </li>
             {/* Yarn */}
 
@@ -140,52 +147,52 @@ const TopNav = () => {
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
-                    <a
+                    <Link
                       href="/addoutsidethread"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Yarn Purchase
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/thread"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Yarn Stock
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/threadstock"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Yarn Cotton Stocks
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/threadpolystock"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Yarn Poly Stocks
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/color"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Add Color
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/yarn"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Add Yarn Shop
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 {/* <div className="py-1">
@@ -235,44 +242,44 @@ const TopNav = () => {
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
-                    <a
+                    <Link
                       href="/users"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       View Customer
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/designs"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Add Design
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/addusers"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Add Customer
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/printalldetails"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Print Details
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/paavulist"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Paavu List
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 {/* <div className="py-1">
@@ -322,60 +329,60 @@ const TopNav = () => {
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
-                    <a
+                    <Link
                       href="/yarnbilling"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Yarn Billing
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/yarnbillingdetails"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Yarn Billing Details
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/viewreports"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       View Reports
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/lalbagreports"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Lalbag Reports
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/kamalreports"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Kamal Reports
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="sixerreports"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Sixer Reports
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/polycheckedreports"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Poly Mini Reports
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 {/* <div className="py-1">
@@ -390,12 +397,12 @@ const TopNav = () => {
             </li>
 
             <li>
-              <a
+              <Link
                 href="#"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Sign Out
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
