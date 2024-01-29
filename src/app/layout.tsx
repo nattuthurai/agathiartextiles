@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopNav />
-        <section>{children}</section>
+        <section className="m-5">{children}</section>
       </body>
     </html>
   );

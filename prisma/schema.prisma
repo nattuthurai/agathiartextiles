@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:Welcome123@localhost:3306/agtext"
+  url      = "mysql://root:root123@localhost:3306/agtext1"
 }
 
 model Yarns {

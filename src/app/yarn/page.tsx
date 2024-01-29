@@ -65,15 +65,16 @@ const Yarn = () => {
           >
             Add yarn
           </Link>
-
+        </div>
+        <div className="mb-5">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Yarn Shop
           </label>
           <div className="inline-block relative w-64">
             <select
-              className="block appearance-none w-full bg-white border
-         border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow 
-         leading-tight focus:outline-none focus:shadow-outline"
+              className="block bg-white border w-64
+         border-gray-400 px-4 py-2 pr-8 rounded shadow 
+         leading-tight"
               name="yarnShop"
               id="yarnShop"
             >
@@ -85,15 +86,7 @@ const Yarn = () => {
                 );
               })}
             </select>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-              <svg
-                className="fill-current h-4 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </div>
+            
           </div>
         </div>
         <div className="mb-5">
@@ -101,9 +94,9 @@ const Yarn = () => {
             Select Color
           </label>
           <select
-            className="block appearance-none w-full bg-white border
-         border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow 
-         leading-tight focus:outline-none focus:shadow-outline"
+            className="bg-white border w-64
+         border-gray-400 px-4 py-2 rounded shadow 
+         leading-tight"
             name="yarnColor"
             id="yarnColor"
           >
@@ -123,7 +116,9 @@ const Yarn = () => {
           <input
             type="number"
             id="kiloGram"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="bg-white border w-64
+            border-gray-400 px-4 py-2 rounded shadow 
+            leading-tight"
             required
           />
         </div>
