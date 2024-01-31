@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:root123@localhost:3306/agtext1"
+  url      = env("DATABASE_URL")
 }
 
 model Yarns {
@@ -18,4 +18,13 @@ model Colors {
   id   Int    @id @default(autoincrement())
   name String @db.VarChar(50)
   date String @db.VarChar(50)
+}
+
+model Users {
+  id       Int    @id @default(autoincrement())
+  name     String @db.VarChar(50)
+  emailid  String @db.VarChar(50)
+  mobileno String @db.VarChar(50)
+  address  String @db.VarChar(150)
+  date     String @db.VarChar(50)
 }
